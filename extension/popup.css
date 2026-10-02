@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+
+body {
+  width: 300px;
+  margin: 0;
+  padding: 14px;
+  background: #0F172A;
+  color: #F8FAFC;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.logo { font-size: 26px; }
+h1 { margin: 0; font-size: 16px; }
+.tagline { margin: 0; color: #94A3B8; font-size: 11px; }
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+}
+.dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.dot-unknown { background: #94A3B8; }
+.dot-online { background: #10B981; }
+.dot-offline { background: #EF4444; }
+
+.last-scan {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.last-scan h2, .settings h2 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+}
+.scan-summary { display: flex; align-items: center; gap: 10px; }
+.scan-score { font-size: 22px; font-weight: 800; }
+.scan-verdict { font-weight: 700; }
+.scan-subject { color: #94A3B8; font-size: 11px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.actions { display: flex; gap: 8px; margin-bottom: 14px; }
+.btn {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1E293B;
+  color: #F8FAFC;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover { border-color: #6366F1; }
+.btn-primary { background: #6366F1; border-color: #6366F1; }
+.btn-primary:hover { opacity: 0.9; }
+
+.settings {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px;
+}
+.settings label { display: block; margin: 8px 0 4px; color: #94A3B8; font-size: 11px; }
+.settings input[type="text"] {
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0F172A;
+  color: #F8FAFC;
+  font-size: 12px;
+}
+.checkbox-row { display: flex; align-items: center; gap: 6px; color: #F8FAFC !important; font-size: 12px !important; }
+.checkbox-row input { width: auto; }
+.settings .btn { width: 100%; margin-top: 10px; }
+.save-confirm { color: #10B981; text-align: center; margin: 6px 0 0; }
+
+footer {
+  margin-top: 12px;
+  color: #64748B;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.hidden { display: none !important; }
