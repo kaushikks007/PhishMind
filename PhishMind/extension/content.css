@@ -1,0 +1,12 @@
+/* Styles for the light-DOM host element only. Everything inside the widget
+   itself lives in a shadow root (see content.js) so it can never inherit or
+   leak styles from Gmail's own CSS. */
+#phishmind-host {
+  all: initial;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: 2147483647;
+}

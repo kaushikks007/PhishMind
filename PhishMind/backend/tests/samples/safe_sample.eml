@@ -1,0 +1,17 @@
+From: Newsletter <news@example.edu>
+To: student@example.edu
+Reply-To: news@example.edu
+Subject: This Week at Example University
+Authentication-Results: mx.example.edu; spf=pass smtp.mailfrom=example.edu; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+
+Hi there,
+
+Here's a quick roundup of events happening on campus this week: the
+library will have extended hours during finals, and the career fair is
+next Tuesday in the main hall.
+
+No action is needed from you.
+
+Best,
+Example University Newsletter

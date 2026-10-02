@@ -1,0 +1,17 @@
+From: IT Security <security-update@example.net>
+To: student@example.edu
+Reply-To: verify@different-example.net
+Subject: Urgent Security Verification Required
+Authentication-Results: mx.example.edu; spf=pass smtp.mailfrom=example.net; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+
+Dear Student,
+
+Following the recent security review, your university account requires
+verification before 5 PM today. Failure to complete verification may
+result in account suspension.
+
+Please verify immediately: https://example.net/account/verify
+
+Thank you,
+IT Security Team

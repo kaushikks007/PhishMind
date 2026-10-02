@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PhishMind</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">🛡️</span>
+    <div>
+      <h1>PhishMind</h1>
+      <p class="tagline">AI-aware phishing detector</p>
+    </div>
+  </header>
+
+  <section class="status-row">
+    <span id="status-dot" class="dot dot-unknown"></span>
+    <span id="status-text">Checking backend…</span>
+  </section>
+
+  <section id="last-scan" class="last-scan hidden">
+    <h2>Last scan</h2>
+    <div class="scan-summary">
+      <span id="scan-score" class="scan-score">–</span>
+      <div>
+        <div id="scan-verdict" class="scan-verdict">–</div>
+        <div id="scan-subject" class="scan-subject">–</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button id="rescan-btn" class="btn btn-primary">Rescan open email</button>
+    <button id="dashboard-btn" class="btn btn-secondary">Open dashboard</button>
+  </section>
+
+  <section class="settings">
+    <h2>Settings</h2>
+    <label for="backend-url">Backend URL</label>
+    <input id="backend-url" type="text" placeholder="http://localhost:8000" />
+
+    <label for="dashboard-url">Dashboard URL</label>
+    <input id="dashboard-url" type="text" placeholder="http://localhost:5173" />
+
+    <label class="checkbox-row">
+      <input id="auto-scan" type="checkbox" />
+      Auto-scan emails as I open them in Gmail
+    </label>
+    <label class="checkbox-row">
+      <input id="show-feedback" type="checkbox" />
+      Prompt me for spam/valid feedback on risky emails
+    </label>
+
+    <button id="save-settings" class="btn btn-primary">Save settings</button>
+    <p id="save-confirm" class="save-confirm hidden">Saved.</p>
+  </section>
+
+  <footer>
+    Works alongside the PhishMind web dashboard — start the backend and dashboard from VS Code first.
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
